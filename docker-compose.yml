@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  BD:
+    image: mariadb
+    container_name: mariadb_container
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: geekshubs_academy
+      MYSQL_USER: geekshubs
+      MYSQL_PASSWORD: geekshubs
+    ports:
+      - 3307:3306
+    volumes:
+      - ./db:/var/lib/mysql
