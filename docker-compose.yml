@@ -5,9 +5,9 @@ services:
     container_name: mariadb_container
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: geekshubs_academy
-      MYSQL_USER: geekshubs
-      MYSQL_PASSWORD: geekshubs
+      MYSQL_DATABASE: bookstore
+      MYSQL_USER: pepe
+      MYSQL_PASSWORD: Pepe@1234
     ports:
       - 3307:3306
     volumes:
