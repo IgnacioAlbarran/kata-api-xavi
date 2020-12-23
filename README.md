@@ -1,3 +1,13 @@
+Pequeña kata basada en la kata BaseTypeScriptProject de GeeksHubs y que crea una base de datos relacional en MARIADB a la cual nos conectamos por API creada en EXPRESS Y TypeORM. A través de esta API gestionaremos el modelo libros de la DB Bookstore (el CRUD básico).
+
+Tecnologías usadas:
+-MariaDB
+-TypeORM
+-NodeJS
+-Babel
+-Docker
+-Javascript
+
 # BaseTypeScriptProject
 Proyecto Base para las clases de TypeORM
 
@@ -18,7 +28,7 @@ $ docker-compose up
 ### Datos de acceso a la BD:
 ```
 * host: mariadb_container
-* user: geekshubs
-* password: geekshubs
+* user: pepe
+* password: Pepe@1234
 
 ```
