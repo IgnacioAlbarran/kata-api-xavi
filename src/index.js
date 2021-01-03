@@ -10,7 +10,6 @@ app.use(bodyParser.json());
 (async ()=> {
     try{
         const connection = await createConnection();
-        const queryRunner = await connection.createQueryRunner();
         console.log("Connection stablished? : ", connection.isConnected);
     }catch(error){
         console.error(error)
@@ -31,6 +30,7 @@ app.get('/books', async (req, res) => {
 app.get("/book/:identifier", async(req, res) => {
     var { identifier } = req.params;
     var book = await new getCustomRepository(BookRepository).getBook(identifier)
+    console.log(book)
     res.send(book)
 })
 
