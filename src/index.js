@@ -30,7 +30,6 @@ app.get('/books', async (req, res) => {
 app.get("/book/:identifier", async(req, res) => {
     var { identifier } = req.params;
     var book = await new getCustomRepository(BookRepository).getBook(identifier)
-    console.log(book)
     res.send(book)
 })
 
